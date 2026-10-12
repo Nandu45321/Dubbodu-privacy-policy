@@ -3,68 +3,200 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dubbodu Privacy Policy</title>
+<title>Dubbodu – Privacy Policy</title>
+<meta name="description" content="Privacy policy for the Dubbodu campus companion app for IISER Thiruvananthapuram.">
 <style>
-  :root { --bg:#ffffff; --fg:#1d2329; --muted:#5b6670; --accent:#1a73e8; --line:#e3e7eb; }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg:#16191c; --fg:#e6e9ec; --muted:#9aa5af; --accent:#8ab4f8; --line:#2a3036; }
+  :root {
+    --bg: #ffffff; --fg: #1d2329; --muted: #5b6670;
+    --accent: #1a73e8; --line: #e3e7eb; --chip-bg: #f0f4f9;
   }
-  * { box-sizing: border-box; }
-  body { margin:0; background:var(--bg); color:var(--fg);
-         font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
-  main { max-width:760px; margin:0 auto; padding:32px 20px 64px; }
-  h1 { font-size:2rem; margin:0 0 4px; }
-  h2 { font-size:1.2rem; margin:36px 0 8px; padding-top:20px; border-top:1px solid var(--line); }
-  p, li { color:var(--fg); }
-  .meta { color:var(--muted); font-size:.9rem; margin-bottom:24px; }
-  a { color:var(--accent); }
-  ul { padding-left:22px; }
-  mark { background:#fff3a3; color:#222; padding:0 3px; border-radius:3px; }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16191c; --fg: #e6e9ec; --muted: #9aa5af;
+      --accent: #8ab4f8; --line: #2a3036; --chip-bg: #1e2428;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg); color: var(--fg);
+    font: 16px/1.7 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 780px; margin: 0 auto; padding: 40px 20px 80px; }
+  h1 { font-size: 2rem; font-weight: 700; margin-bottom: 6px; }
+  h2 {
+    font-size: 1.15rem; font-weight: 600;
+    margin: 40px 0 10px; padding-top: 24px;
+    border-top: 1px solid var(--line);
+  }
+  h3 { font-size: 1rem; font-weight: 600; margin: 20px 0 6px; color: var(--muted); }
+  p { margin-bottom: 12px; }
+  li { margin-bottom: 8px; }
+  ul, ol { padding-left: 22px; margin-bottom: 14px; }
+  .meta { color: var(--muted); font-size: .9rem; margin-bottom: 28px; }
+  a { color: var(--accent); }
+  .note {
+    background: var(--chip-bg); border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0; padding: 12px 16px; margin: 16px 0;
+    font-size: .95rem;
+  }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: .95rem; }
+  th, td { text-align: left; padding: 10px 12px; border: 1px solid var(--line); }
+  th { background: var(--chip-bg); font-weight: 600; }
+  @media (max-width: 520px) {
+    h1 { font-size: 1.5rem; }
+    table, thead, tbody, th, td, tr { display: block; }
+    th { display: none; }
+    td { border-top: none; padding: 6px 10px; }
+    td::before { font-weight: 600; content: attr(data-label) ": "; }
+    tr { border: 1px solid var(--line); border-radius: 8px; margin-bottom: 10px; overflow: hidden; }
+  }
 </style>
 </head>
 <body>
 <main>
 
-<h1>Dubbodu Privacy Policy</h1>
-<p class="meta">Effective date: <mark>13 October 2026</mark> &middot; App: Dubbodu (<code>com.nandu45321.dubbodu</code>)</p>
+<h1>Dubbodu &#8212; Privacy Policy</h1>
+<p class="meta">
+  Effective date: 13 October 2026 &middot;
+  App: Dubbodu &middot;
+  Developer: Team Navishka / Yamulapalli Nandu Navadeep, IISER Thiruvananthapuram
+</p>
 
-<p>Dubbodu is a campus panorama viewer and companion app for IISER Thiruvananthapuram, developed by <mark>Your Full Name</mark> ("we", "us"). This policy explains what information the app uses and why.</p>
+<p>Dubbodu is a campus companion app for IISER Thiruvananthapuram. It provides 360&deg; panorama navigation, GPS-assisted campus routing, timetable management, mess menu, bus timings, academic calendar, contact directory, and related campus information services. This policy explains exactly what data the app uses, why, and what we never do.</p>
 
-<h2>1. Information we use</h2>
+<div class="note">
+  <strong>Short version:</strong> The app does not create accounts, does not track you, does not sell data, and does not show ads. Nearly everything stays on your own device.
+</div>
+
+<h2>1. Information the app uses</h2>
+
+<h3>a. Location (GPS and device sensors)</h3>
 <ul>
-  <li><strong>Location (GPS).</strong> If you allow location access, the app uses your device's location to show where you are on the campus map and to help with navigation. <mark>VERIFY: Location is processed on your device only and is not sent to or stored on our servers.</mark></li>
-  <li><strong>Notifications.</strong> If you allow notifications, the app shows alerts and reminders on your device. It may run a foreground service so these keep working while the app is in the background.</li>
-  <li><strong>Content you share.</strong> When you use the share feature, the app hands the content you choose to the app you select (for example a messaging app). We do not receive it.</li>
-  <li><strong>Network requests.</strong> The app downloads panoramas and campus data from our servers (hosted on Cloudflare). Like any server, these may log technical details such as your IP address, request time and app version for operation and abuse prevention. <mark>VERIFY: No account, name, email or other personal profile is collected.</mark></li>
+  <li><strong>GPS / fine location</strong> &mdash; used to show your position on the campus map and to calculate walking routes. Location is processed entirely on-device. It is never sent to, stored on, or logged by our servers.</li>
+  <li><strong>Motion sensors</strong> (accelerometer, gyroscope, gravity, magnetometer) &mdash; used locally to control the 360&deg; panorama viewer (tilting your phone changes the view direction). No sensor data leaves your device.</li>
 </ul>
 
-<h2>2. How we use information</h2>
-<p>Only to provide and improve the features above: showing your position, delivering notifications, loading app content, keeping the service secure and fixing bugs.</p>
+<h3>b. Timetable preferences</h3>
+<p>If you set up your timetable (course, year, subject selections), those preferences are stored locally on your device in a configuration file. They are never uploaded to our servers. The app uses them to show your schedule and &mdash; if you enable silent mode &mdash; to mute your device automatically during class hours.</p>
 
-<h2>3. Sharing</h2>
-<p>We do not sell your personal information. We do not use it for advertising and the app contains no ads. We share information only with service providers needed to run the app (such as Cloudflare for hosting and delivery), or if the law requires it.</p>
+<h3>c. Notifications</h3>
+<p>If you grant notification permission, the app may show on-device alerts (for example, class reminders or campus updates). The app may run a foreground service to keep these working in the background. No notification content is sent to us.</p>
 
-<h2>4. Data retention</h2>
-<p><mark>VERIFY: We do not keep personal location data. Server logs, if any, are kept for a limited period (for example up to 30 days) and then deleted.</mark></p>
+<h3>d. Content you share</h3>
+<p>If you use the share feature (for example, to share a bus timing or contact), the app passes the content you select to the app you choose (a messaging or email app). We do not receive a copy.</p>
 
-<h2>5. Your choices</h2>
+<h3>e. Network requests and server logs</h3>
+<p>The app downloads campus data (panoramas, timetable data, mess menus, bus timings, contacts, academic calendar) from our servers. Like any server, these may record standard technical details &mdash; your device's IP address, request timestamp, requested resource, and app version &mdash; solely for operation, debugging, and abuse prevention. We do not create user profiles. No name, email, account, or device identifier is linked to these logs.</p>
+
+<h2>2. Panoramic image privacy</h2>
+<p>All 360&deg; panoramas published through the app are subject to the following safeguards:</p>
 <ul>
-  <li>You can turn off location or notification permission at any time in your phone's Settings &rarr; Apps &rarr; Dubbodu &rarr; Permissions. Some features will stop working.</li>
-  <li>You can uninstall the app at any time, which removes locally stored app data from your device.</li>
-  <li>To ask a question or request deletion of anything we may hold about you, contact us (see below).</li>
+  <li><strong>Automatic face blurring.</strong> Every panoramic image is run through a computer-vision pipeline (OpenCV) that detects and blurs all human faces before the image is uploaded to the server. No identifiable face is published.</li>
+  <li><strong>Full person removal (planned).</strong> For cases where individuals appear prominently, a two-photograph compositing technique will be used to remove them entirely from the final image.</li>
+  <li><strong>Restricted photography scope.</strong> Photography is limited to outdoor areas and common indoor areas (corridors, staircases, entrance lobbies, publicly accessible common rooms). Laboratories, faculty offices, restricted zones, security infrastructure, and any space flagged as sensitive by the institute are explicitly excluded. Any indoor space beyond common areas requires explicit written permission from the responsible authority.</li>
+  <li><strong>No user-generated content.</strong> Users cannot upload images, post comments, or contribute any content. All published material is curated entirely by the developer and subject to institute oversight.</li>
+  <li><strong>Remote removal.</strong> Any panorama can be removed from the app remotely within minutes of a request &mdash; by institute authorities or by us &mdash; without requiring an app update.</li>
 </ul>
 
-<h2>6. Security</h2>
-<p>Data sent between the app and our servers uses HTTPS. No system is perfectly secure, but we work to protect the information we handle.</p>
+<h2>3. Indoor maps</h2>
+<p>Indoor navigation uses simplified, node-based vector maps derived from publicly displayed floor plans. No detailed architectural drawings, structural layouts, or engineering schematics are published. Room-level content requires separate permission from the responsible authority.</p>
 
-<h2>7. Children</h2>
-<p>Dubbodu is intended for a general campus audience and is not directed at children under 13. We do not knowingly collect personal information from children.</p>
+<h2>4. How we use information</h2>
+<p>Solely to provide and improve the features described above:</p>
+<ul>
+  <li>Show your position on the campus map</li>
+  <li>Calculate and display walking routes</li>
+  <li>Drive the 360&deg; panorama viewer</li>
+  <li>Display your timetable and automate silent mode</li>
+  <li>Deliver campus information (mess menus, bus timings, contacts, academic calendar)</li>
+  <li>Keep the service secure and fix bugs</li>
+</ul>
 
-<h2>8. Changes to this policy</h2>
-<p>We may update this policy. The latest version will always be at this page, with its effective date shown at the top.</p>
+<h2>5. What we never do</h2>
+<table>
+  <thead>
+    <tr><th>We never&hellip;</th><th>Why this is guaranteed</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="We never">Sell your personal data</td>
+      <td data-label="Why">No personal data is collected in the first place</td>
+    </tr>
+    <tr>
+      <td data-label="We never">Show ads or use ad networks</td>
+      <td data-label="Why">The app has no advertising and no monetization through user data</td>
+    </tr>
+    <tr>
+      <td data-label="We never">Track your location over time</td>
+      <td data-label="Why">GPS is only read when the map or routing feature is active; nothing is stored or uploaded</td>
+    </tr>
+    <tr>
+      <td data-label="We never">Create user accounts or profiles</td>
+      <td data-label="Why">There is no login, sign-up, or user identity system</td>
+    </tr>
+    <tr>
+      <td data-label="We never">Use cross-app or cross-site tracking</td>
+      <td data-label="Why">No analytics SDKs, no third-party trackers, no fingerprinting</td>
+    </tr>
+  </tbody>
+</table>
 
-<h2>9. Contact</h2>
-<p>Questions or requests: <a href="mailto:you@example.com"><mark>you@example.com</mark></a></p>
+<h2>6. Data sharing</h2>
+<p>We share information only in the following narrow circumstances:</p>
+<ul>
+  <li><strong>Infrastructure providers.</strong> Campus data and panoramas are hosted on Cloudflare's infrastructure (a globally trusted CDN and security platform). Cloudflare may process technical metadata (IP address, request details) as part of delivering content. Cloudflare's own privacy policy applies to this processing.</li>
+  <li><strong>Legal obligations.</strong> If required by applicable law or a lawful governmental order.</li>
+</ul>
+<p>No other third party receives your data.</p>
+
+<h2>7. Data retention</h2>
+<ul>
+  <li>We do not retain personal location data.</li>
+  <li>Server logs, if any, are kept for a limited period (up to 30 days) and then deleted.</li>
+  <li>Your timetable preferences and locally cached campus data live on your device and are removed when you uninstall the app.</li>
+</ul>
+
+<h2>8. Future features</h2>
+<p>Dubbodu is an evolving platform. Planned features and their privacy implications are disclosed here in advance:</p>
+<ul>
+  <li><strong>Student verification.</strong> If the institute requires that certain content be accessible only to enrolled students, a lightweight verification step (for example, using an institute email address) may be introduced. Any such system will be described in an updated policy before it is deployed. No academic record or personal data beyond email verification would be stored.</li>
+  <li><strong>Push notifications.</strong> Institution-wide announcements or personalised schedule reminders may be delivered via a push notification service. Device tokens used for delivery would not be linked to personal identity.</li>
+  <li><strong>Events and community features.</strong> If community or event features are added, any content you submit will be covered by updated terms communicated clearly at the time.</li>
+  <li><strong>Expanded indoor maps and navigation.</strong> Additional buildings may be mapped with institute permission. The same restrictions (common areas only, no sensitive spaces, no structural data) will continue to apply.</li>
+</ul>
+<p>This policy will be updated before any new data practice takes effect.</p>
+
+<h2>9. Institute oversight</h2>
+<p>IISER Thiruvananthapuram authorities retain the ability to request removal or modification of any content in the app at any time. A dedicated point of contact is available to respond promptly. The system is designed so that content can be updated or removed server-side without requiring users to update the app.</p>
+
+<h2>10. Security</h2>
+<ul>
+  <li>All communication between the app and our servers uses HTTPS (TLS).</li>
+  <li>Panoramas are served from Cloudflare and are not publicly indexable by search engines.</li>
+  <li>No system is perfectly secure, but we apply reasonable technical measures to protect data in transit and at rest.</li>
+</ul>
+
+<h2>11. Children</h2>
+<p>Dubbodu is intended for the IISER TVM campus community (students, faculty, staff, and visitors). It is not directed at children under 13. We do not knowingly collect personal information from children under 13.</p>
+
+<h2>12. Your choices</h2>
+<ul>
+  <li><strong>Location:</strong> Revoke at any time in <em>Settings &rarr; Apps &rarr; Dubbodu &rarr; Permissions</em>. Map and routing features will stop working; all other features remain available.</li>
+  <li><strong>Notifications:</strong> Revoke at any time in <em>Settings &rarr; Apps &rarr; Dubbodu &rarr; Notifications</em>.</li>
+  <li><strong>Timetable data:</strong> You can clear or reset your timetable preferences within the app at any time.</li>
+  <li><strong>Uninstall:</strong> Removes all locally stored app data from your device.</li>
+  <li><strong>Data requests:</strong> To ask about, or request deletion of, anything we may hold, contact us at the address below.</li>
+</ul>
+
+<h2>13. Changes to this policy</h2>
+<p>We may update this policy as features evolve. The latest version will always be at this URL, with the effective date shown at the top. For material changes, we will make a reasonable effort to notify users in-app.</p>
+
+<h2>14. Contact</h2>
+<p>
+  Questions, concerns, or data requests:<br>
+  <a href="mailto:ynandunavadeep45321@gmail.com">ynandunavadeep45321@gmail.com</a><br>
+  Yamulapalli Nandu Navadeep &mdash; IISER Thiruvananthapuram (IMS24267)
+</p>
 
 </main>
 </body>
