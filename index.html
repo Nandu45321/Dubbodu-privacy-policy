@@ -3,240 +3,89 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dubbodu &#8211; Privacy Policy</title>
-<meta name="description" content="Privacy policy for the Dubbodu campus companion app for IISER Thiruvananthapuram.">
+<title>Dubbodu – Privacy Policy</title>
+<meta name="description" content="Privacy policy for the Dubbodu campus companion app.">
 <style>
-  :root {
-    --bg: #ffffff; --fg: #1d2329; --muted: #5b6670;
-    --accent: #1a73e8; --line: #e3e7eb; --chip-bg: #f0f4f9;
-    --warn-bg: #fff8e1; --warn-border: #f9a825;
+  :root { --bg:#fff; --fg:#1d2329; --muted:#5b6670; --accent:#1a73e8; --line:#e3e7eb; --chip:#f0f4f9; --warn-bg:#fff8e1; --warn-bd:#f9a825; }
+  @media (prefers-color-scheme:dark) {
+    :root { --bg:#16191c; --fg:#e6e9ec; --muted:#9aa5af; --accent:#8ab4f8; --line:#2a3036; --chip:#1e2428; --warn-bg:#2a2410; --warn-bd:#c68f00; }
   }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #16191c; --fg: #e6e9ec; --muted: #9aa5af;
-      --accent: #8ab4f8; --line: #2a3036; --chip-bg: #1e2428;
-      --warn-bg: #2a2410; --warn-border: #c68f00;
-    }
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    background: var(--bg); color: var(--fg);
-    font: 16px/1.7 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  }
-  main { max-width: 780px; margin: 0 auto; padding: 40px 20px 80px; }
-  h1 { font-size: 2rem; font-weight: 700; margin-bottom: 6px; }
-  h2 {
-    font-size: 1.15rem; font-weight: 600;
-    margin: 40px 0 10px; padding-top: 24px;
-    border-top: 1px solid var(--line);
-  }
-  h3 { font-size: 1rem; font-weight: 600; margin: 20px 0 6px; color: var(--muted); }
-  p { margin-bottom: 12px; }
-  li { margin-bottom: 8px; }
-  ul, ol { padding-left: 22px; margin-bottom: 14px; }
-  .meta { color: var(--muted); font-size: .9rem; margin-bottom: 28px; }
-  a { color: var(--accent); }
-  .note {
-    background: var(--chip-bg); border-left: 3px solid var(--accent);
-    border-radius: 0 6px 6px 0; padding: 12px 16px; margin: 16px 0;
-    font-size: .95rem;
-  }
-  .warn {
-    background: var(--warn-bg); border-left: 3px solid var(--warn-border);
-    border-radius: 0 6px 6px 0; padding: 12px 16px; margin: 16px 0;
-    font-size: .95rem;
-  }
-  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: .95rem; }
-  th, td { text-align: left; padding: 10px 12px; border: 1px solid var(--line); }
-  th { background: var(--chip-bg); font-weight: 600; }
-  @media (max-width: 520px) {
-    h1 { font-size: 1.5rem; }
-    table, thead, tbody, th, td, tr { display: block; }
-    th { display: none; }
-    td { border-top: none; padding: 6px 10px; }
-    td::before { font-weight: 600; content: attr(data-label) ": "; }
-    tr { border: 1px solid var(--line); border-radius: 8px; margin-bottom: 10px; overflow: hidden; }
-  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--fg);font:16px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  main{max-width:720px;margin:0 auto;padding:40px 20px 80px}
+  h1{font-size:2rem;font-weight:700;margin-bottom:6px}
+  h2{font-size:1.1rem;font-weight:600;margin:36px 0 8px;padding-top:20px;border-top:1px solid var(--line)}
+  p{margin-bottom:12px}
+  li{margin-bottom:6px}
+  ul{padding-left:22px;margin-bottom:14px}
+  .meta{color:var(--muted);font-size:.9rem;margin-bottom:28px}
+  a{color:var(--accent)}
+  .note{background:var(--chip);border-left:3px solid var(--accent);border-radius:0 6px 6px 0;padding:12px 16px;margin:16px 0;font-size:.95rem}
+  .warn{background:var(--warn-bg);border-left:3px solid var(--warn-bd);border-radius:0 6px 6px 0;padding:12px 16px;margin:16px 0;font-size:.95rem}
 </style>
 </head>
 <body>
 <main>
 
-<h1>Dubbodu &#8212; Privacy Policy</h1>
-<p class="meta">
-  Effective date: 13 October 2026 &middot;
-  App: Dubbodu &middot;
-  Developer: Team Navishka
-</p>
+<h1>Dubbodu &mdash; Privacy Policy</h1>
+<p class="meta">Effective date: 13 October 2026 &middot; Developer: Team Navishka</p>
 
 <div class="warn">
-  <strong>Unofficial app &mdash; student initiative.</strong> Dubbodu is an independent, student-led project developed by Team Navishka. It is <em>not</em> an official app of IISER Thiruvananthapuram, is not affiliated with, endorsed by, or operated by the institute, and does not represent the institute in any official capacity. Any campus information displayed (timetables, mess menus, bus timings, etc.) is aggregated on a best-effort basis and may not be authoritative.
+  <strong>Unofficial app.</strong> Dubbodu is an independent, student-led project by Team Navishka. It is <em>not</em> an official app of IISER Thiruvananthapuram and is not affiliated with or endorsed by the institute.
 </div>
 
-<p>Dubbodu is a campus companion app for IISER Thiruvananthapuram. It provides 360&deg; panorama navigation, GPS-assisted campus routing, timetable management, mess menu, bus timings, academic calendar, contact directory, and related campus information services. This policy explains exactly what data the app uses, why, and what we never do.</p>
-
-<div class="note">
-  <strong>Short version:</strong> The app does not create personal accounts and does not show ads. Most data stays on your device. The app does collect anonymous device identifiers to prevent abuse; these are not linked to your name or any personal profile.
-</div>
-
-<h2>1. Information the app uses</h2>
-
-<h3>a. Location (GPS and device sensors)</h3>
-<ul>
-  <li><strong>GPS / fine location</strong> &mdash; used to show your position on the campus map and to calculate walking routes. Location is processed entirely on-device. It is never sent to, stored on, or logged by our servers.</li>
-  <li><strong>Motion sensors</strong> (accelerometer, gyroscope, gravity, magnetometer) &mdash; used locally to control the 360&deg; panorama viewer (tilting your phone changes the view direction). No sensor data leaves your device.</li>
-</ul>
-
-<h3>b. Timetable preferences</h3>
-<p>If you set up your timetable (course, year, subject selections), those preferences are stored locally on your device in a configuration file. They are never uploaded to our servers. The app uses them to show your schedule and &mdash; if you enable silent mode &mdash; to mute your device automatically during class hours.</p>
-
-<h3>c. Device identifiers (for abuse prevention)</h3>
 <div class="warn">
-  <strong>This is a planned feature, disclosed in advance.</strong> The device registration system described below is not yet active. This policy is updated before each feature goes live.
+  <strong>Accuracy disclaimer.</strong> Information displayed in the app (timetables, mess menus, bus timings, academic calendar, contacts, etc.) is aggregated on a best-effort basis and may not always be accurate or up to date. Use it at your own risk. Always verify with official institute sources for anything important.
 </div>
-<p>To prevent unauthorised access to app content and to protect the service from abuse, the app is planned to collect the following identifiers on first launch:</p>
+
+<h2>What we collect</h2>
 <ul>
-  <li><strong>Android ID</strong> &mdash; a unique identifier assigned by Android to the app on your device.</li>
-  <li><strong>Install UUID</strong> &mdash; a random identifier generated at first install and stored locally.</li>
-</ul>
-<p>These identifiers are combined and sent to Firebase (Google's infrastructure) solely to register the device as a legitimate app installation. They are <em>not</em> linked to your name, email address, phone number, or any account. They are used only to identify the app installation for abuse prevention and content access control, as described in Section 3 below.</p>
-<p>You will be informed of this registration at first launch through the app's Terms &amp; Conditions screen.</p>
-
-<h3>d. Notifications</h3>
-<p>If you grant notification permission, the app may show on-device alerts (for example, class reminders or campus updates). The app may run a foreground service to keep these working in the background. No notification content is sent to us.</p>
-
-<h3>e. Content you share</h3>
-<p>If you use the share feature, the app passes the content you select to the app you choose (a messaging or email app). We do not receive a copy.</p>
-
-<h3>f. Network requests and server logs</h3>
-<p>The app downloads campus data (panoramas, timetable data, mess menus, bus timings, contacts, academic calendar) from our servers. Like any server, these may record standard technical details &mdash; your device's IP address, request timestamp, requested resource, and app version &mdash; solely for operation, debugging, and abuse prevention. No name, email, account, or personal profile is linked to these logs.</p>
-
-<h2>2. Panoramic image privacy</h2>
-<p>All 360&deg; panoramas published through the app are subject to the following safeguards:</p>
-<ul>
-  <li><strong>Automatic face blurring.</strong> Every panoramic image is run through a computer-vision pipeline (OpenCV) that detects and blurs all human faces before the image is uploaded to the server. No identifiable face is published.</li>
-  <li><strong>Full person removal (planned).</strong> For cases where individuals appear prominently, a two-photograph compositing technique will be used to remove them entirely from the final image.</li>
-  <li><strong>Restricted photography scope.</strong> Photography is limited to outdoor areas and common indoor areas (corridors, staircases, entrance lobbies, publicly accessible common rooms). Laboratories, faculty offices, restricted zones, security infrastructure, and any space flagged as sensitive by the institute are explicitly excluded. Room-level access requires explicit written permission from the responsible authority.</li>
-  <li><strong>No user-generated content.</strong> Users cannot upload images, post comments, or contribute any content. All published material is curated entirely by the developer and subject to institute oversight.</li>
-  <li><strong>Remote removal.</strong> Any panorama can be removed from the app remotely within minutes of a request &mdash; by institute authorities or by us &mdash; without requiring an app update.</li>
+  <li><strong>Location (GPS).</strong> Only used to show your position on the campus map and compute routes. Processed on your device &mdash; never sent to our servers.</li>
+  <li><strong>Motion sensors</strong> (accelerometer, gyroscope, magnetometer). Only used to control the 360&deg; panorama viewer. Nothing leaves your device.</li>
+  <li><strong>Timetable preferences.</strong> Your course, year, and subject selections are saved locally on your device only. Never uploaded.</li>
+  <li><strong>Device identifiers (planned).</strong> To prevent abuse, the app plans to collect an anonymous device identifier (Android ID + a random install ID) on first launch to register your installation. This is <em>not</em> linked to your name, email, or any personal account. You will be informed at first launch.</li>
+  <li><strong>Server request logs.</strong> When the app fetches content (panoramas, menus, timings, etc.), our servers may log your IP address, request time, and app version for technical operation. These are not linked to any personal profile.</li>
 </ul>
 
-<h2>3. Device registration and access control (planned)</h2>
-<p>The app is planned to implement a lightweight device registry to protect content from unauthorised access and to prevent systematic abuse. Here is how it works:</p>
+<h2>What we do with it</h2>
 <ul>
-  <li><strong>Registration.</strong> On first launch, the app sends the device identifiers described in Section 1(c) to a Firebase-backed registry. This registers the installation as a legitimate app instance. No personal information is sent.</li>
-  <li><strong>Request signing (HMAC).</strong> Each network request the app makes to our servers is signed with a cryptographic signature (HMAC) derived from a key embedded in the app. Our server verifies this signature before serving any content. Unsigned or tampered requests are rejected. This prevents third-party tools from scraping our content.</li>
-  <li><strong>Device blocking.</strong> In cases of detected abuse (for example, automated scraping, reverse engineering of content, or violation of the Terms of Use), a specific installation may be blocked via the device registry. A blocked device will see an informative message explaining why access is restricted. Block decisions are logged with a reason and timestamp. You may contact us at the address in Section 14 to appeal a block.</li>
-</ul>
-<p>These measures are intended to protect the integrity of the service, not to identify or monitor individual users in their normal use of the app.</p>
-
-<h2>4. Indoor maps</h2>
-<p>Indoor navigation uses simplified, node-based vector maps derived from publicly displayed floor plans. No detailed architectural drawings, structural layouts, or engineering schematics are published. Room-level content requires separate permission from the responsible authority.</p>
-
-<h2>5. How we use information</h2>
-<p>Solely to provide and improve the features described above:</p>
-<ul>
-  <li>Show your position on the campus map and compute routes</li>
-  <li>Drive the 360&deg; panorama viewer</li>
-  <li>Display your timetable and automate silent mode</li>
-  <li>Deliver campus information (mess menus, bus timings, contacts, academic calendar)</li>
-  <li>Authenticate requests and protect content from unauthorised access</li>
-  <li>Prevent and respond to abuse of the service</li>
-  <li>Keep the service secure and fix bugs</li>
+  <li>Power the map, routing, and 360&deg; viewer</li>
+  <li>Show your timetable and automate silent mode during class hours</li>
+  <li>Serve campus information (menus, timings, calendar, contacts)</li>
+  <li>Prevent abuse of the service</li>
+  <li>Fix bugs and keep the app running</li>
 </ul>
 
-<h2>6. What we never do</h2>
-<table>
-  <thead>
-    <tr><th>We never&hellip;</th><th>Detail</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td data-label="We never">Sell your data</td>
-      <td data-label="Detail">Device identifiers collected for abuse prevention are never sold or shared with data brokers</td>
-    </tr>
-    <tr>
-      <td data-label="We never">Show ads or use ad networks</td>
-      <td data-label="Detail">The app has no advertising and no monetization through user data</td>
-    </tr>
-    <tr>
-      <td data-label="We never">Track your location over time</td>
-      <td data-label="Detail">GPS is only read when map or routing features are active; nothing is stored or uploaded</td>
-    </tr>
-    <tr>
-      <td data-label="We never">Link identifiers to personal profiles</td>
-      <td data-label="Detail">Device identifiers are used for abuse prevention only and are never associated with your name, email, or identity</td>
-    </tr>
-    <tr>
-      <td data-label="We never">Use cross-app or cross-site tracking</td>
-      <td data-label="Detail">No analytics SDKs, no third-party trackers, no fingerprinting beyond the device identifiers described above</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2>7. Data sharing</h2>
-<p>We share information only in the following narrow circumstances:</p>
+<h2>What we never do</h2>
 <ul>
-  <li><strong>Cloudflare.</strong> Campus data and panoramas are hosted on Cloudflare's infrastructure (a globally trusted CDN and security platform). Cloudflare processes technical metadata (IP address, request details) as part of delivering content. Cloudflare's own privacy policy applies.</li>
-  <li><strong>Firebase (Google).</strong> Device identifiers are sent to Firebase for the device registry described in Section 3. Firebase's privacy policy applies to this data. No personal data beyond device identifiers is involved.</li>
-  <li><strong>Legal obligations.</strong> If required by applicable law or a lawful governmental order.</li>
-</ul>
-<p>No other third party receives your data.</p>
-
-<h2>8. Data retention</h2>
-<ul>
-  <li>We do not retain personal location data.</li>
-  <li>Server logs, if any, are kept for a limited period (up to 30 days) and then deleted.</li>
-  <li>Device identifiers in the Firebase registry are retained for as long as the installation is active. You may request deletion by contacting us (Section 14).</li>
-  <li>Block records (if applicable) are retained for a reasonable period for audit and appeal purposes.</li>
-  <li>Your timetable preferences and locally cached campus data live on your device and are removed when you uninstall the app.</li>
+  <li>Sell your data</li>
+  <li>Show ads or use ad networks</li>
+  <li>Track your location over time or build a profile on you</li>
+  <li>Require an account or store personal information</li>
 </ul>
 
-<h2>9. Security measures</h2>
-<p>Dubbodu applies multiple layers of technical security:</p>
+<h2>Third parties</h2>
 <ul>
-  <li><strong>Encrypted app bundle.</strong> The application package is built with AES-256 encryption on all bundled assets and a custom security token, making the app's internal resources resistant to extraction by third-party tools.</li>
-  <li><strong>HMAC request signing.</strong> Every network request is cryptographically signed. Our server rejects any request that does not carry a valid signature, preventing unauthorised clients from accessing content.</li>
-  <li><strong>On-device encrypted image cache (planned).</strong> Cached panoramas are stored encrypted on-device using AES-GCM. The encryption key is derived from device-specific values (Android ID, install UUID, and the app's signing certificate hash). Cached files are not readable on any other device or by any other app. Cache files use hashed filenames (.dbb extension) so their contents cannot be inferred from the filename.</li>
-  <li><strong>HTTPS / TLS.</strong> All communication between the app and our servers is encrypted in transit.</li>
-  <li><strong>Content not publicly indexable.</strong> Panoramas and campus data are not publicly indexable by search engines.</li>
+  <li><strong>Cloudflare</strong> &mdash; hosts and delivers app content (panoramas, data). May process your IP address as part of delivery.</li>
+  <li><strong>Firebase (Google)</strong> &mdash; planned for anonymous device registration (abuse prevention only). No personal data involved.</li>
 </ul>
 
-<h2>10. Future features</h2>
-<p>Additional features and their privacy implications, disclosed in advance:</p>
+<h2>Security</h2>
+<p>All network requests use HTTPS. The app's assets are encrypted. Cached panoramas on your device are stored encrypted and are only usable on your device. We apply reasonable measures to protect data, but no system is perfectly secure.</p>
+
+<h2>Your choices</h2>
 <ul>
-  <li><strong>Student verification.</strong> If the institute requires content restricted to enrolled students, a lightweight verification step (for example, institute email) may be introduced. No academic record beyond verification would be stored.</li>
-  <li><strong>Push notifications.</strong> Campus announcements or personalised reminders may be delivered via a push notification service. Device push tokens would not be linked to personal identity.</li>
-  <li><strong>Events and community features.</strong> Any content-submission features would be covered by updated terms communicated at the time.</li>
-  <li><strong>Expanded indoor maps.</strong> Additional buildings may be mapped with institute permission, under the same restrictions as existing maps.</li>
-</ul>
-<p>This policy will be updated before any new data practice takes effect.</p>
-
-<h2>11. Institute oversight</h2>
-<p>IISER Thiruvananthapuram authorities retain the ability to request removal or modification of any content at any time. A dedicated point of contact is available to respond promptly. Content can be updated or removed server-side without requiring users to update the app.</p>
-
-<h2>12. Children</h2>
-<p>Dubbodu is intended for the IISER TVM campus community (students, faculty, staff, and visitors). It is not directed at children under 13. We do not knowingly collect personal information from children under 13.</p>
-
-<h2>13. Your choices</h2>
-<ul>
-  <li><strong>Location:</strong> Revoke at any time in <em>Settings &rarr; Apps &rarr; Dubbodu &rarr; Permissions</em>. Map and routing features will stop working; all other features remain available.</li>
-  <li><strong>Notifications:</strong> Revoke at any time in <em>Settings &rarr; Apps &rarr; Dubbodu &rarr; Notifications</em>.</li>
-  <li><strong>Timetable data:</strong> Clear or reset your timetable preferences within the app at any time.</li>
-  <li><strong>Device registration:</strong> To request deletion of your device's record from the registry, contact us at the address below. Note that this may prevent the app from functioning.</li>
-  <li><strong>Uninstall:</strong> Removes all locally stored app data, including encrypted cache files, from your device.</li>
-  <li><strong>Block appeals:</strong> If your device has been blocked and you believe this is in error, contact us with your install UUID (shown in the block message) to appeal.</li>
+  <li><strong>Location:</strong> Revoke in <em>Settings &rarr; Apps &rarr; Dubbodu &rarr; Permissions</em>. Map and routing stop working; everything else still works.</li>
+  <li><strong>Notifications:</strong> Revoke in <em>Settings &rarr; Apps &rarr; Dubbodu &rarr; Notifications</em>.</li>
+  <li><strong>Uninstall:</strong> Removes all locally stored data from your device.</li>
+  <li><strong>Data requests:</strong> Contact us below.</li>
 </ul>
 
-<h2>14. Changes to this policy</h2>
-<p>We may update this policy as features evolve. The effective date at the top reflects the last change. For material changes we will make a reasonable effort to notify users in-app.</p>
+<h2>Changes</h2>
+<p>This policy may be updated as the app evolves. The effective date at the top will reflect the latest change.</p>
 
-<h2>15. Contact</h2>
-<p>
-  Questions, concerns, data requests, or block appeals:<br>
-  <a href="mailto:ynandunavadeep45321@gmail.com">ynandunavadeep45321@gmail.com</a><br>
-  Team Navishka
-</p>
+<h2>Contact</h2>
+<p><a href="mailto:ynandunavadeep45321@gmail.com">ynandunavadeep45321@gmail.com</a></p>
 
 </main>
 </body>
